@@ -18,8 +18,8 @@ function App() {
       <Main /> 
       <About />
       <Loan /> 
-       {/*<Testimonials />*/}
-       <Faq />
+      <Testimonials />
+      <Faq />
       <Contact />
       <Footer />
     </>
