@@ -17,9 +17,9 @@ export default function Faq() {
   return (
 
 
-    <div style={{display:"flex", flexDirection:"column", padding: "5rem 10rem", backgroundColor:"#0E0A24"}}>
+    // <div style={{display:"flex", flexDirection:"column", padding: "5rem 10rem", backgroundColor:"#0E0A24"}}>
 
-      {<Separtor/>}
+    //   {<Separtor/>}
     <ContainerFaq>
       <ContainerLeft>
         <TitleSecond textTitle="SUPORTE" />
@@ -38,6 +38,6 @@ export default function Faq() {
         <CardQuestion titleQuestion="Como faço para mudar minha senha?"/>
       </ContainerRightFaq>
     </ContainerFaq>
-    </div>
+    // </div>
   )
 }

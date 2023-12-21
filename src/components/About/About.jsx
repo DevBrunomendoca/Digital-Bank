@@ -5,13 +5,15 @@ import Paragraph from "../Paragraph"
 import Subtitle from "../Subtitle"
 import TitleSecond from "../TitleSecond"
 import { GroupCheck } from "../GroupCheckStyle"
+import { ContentLeftAbout } from "./AboutStyle"
 import Separtor from "../Separator"
+import { ImgAbout } from "./ImgAbout"
 
 export default function About() {
   return (
     <SectionAbout>
-      <img  src="/img-about.png" alt="" />
-      <div style={{ maxWidth: "600px", display: "flex", flexDirection: "column", gap: "2rem" }}>
+      
+      <ContentLeftAbout >
         <TitleSecond textTitle="BENEFÍCIOS" />
         <Subtitle textSubtitle="Explorando o mundo dos investimentos" />
         <Paragraph TextParagraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et masa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur." />
@@ -26,8 +28,8 @@ export default function About() {
           </div>
         </GroupCheck>
         <ButtonMain textButtonMain="SABER MAIS"/>
-      </div>
-      
+      </ContentLeftAbout>
+      <ImgAbout src="/img-about.png" alt="Banner de tabela de investimentos" />
     </SectionAbout>
 
   )

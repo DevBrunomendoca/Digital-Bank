@@ -15,11 +15,11 @@ function App() {
   return (
     <>
       <Header />
-      <Main />
+      <Main /> 
       <About />
-      <Loan />
-      <Testimonials />
-      <Faq />
+      <Loan /> 
+       {/*<Testimonials />*/}
+       <Faq />
       <Contact />
       <Footer />
     </>

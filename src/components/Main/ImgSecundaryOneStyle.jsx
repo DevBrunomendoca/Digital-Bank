@@ -17,4 +17,9 @@ animation: floatLeft ease-in-out 3.5s infinite;
     transform: translateY(30px);
   }
 }
+@media (max-width:485px) {
+  bottom: 8vh;
+  left: 15vw;
+  width: 27%;
+  }
 `

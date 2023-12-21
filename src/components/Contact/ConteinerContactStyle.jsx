@@ -18,17 +18,29 @@ background: linear-gradient(90deg,
 height: 400px;
 width: 70vw;
 border-radius: 10px 10px 0 0;
+@media (max-width: 1150px){
+  width: 100vw;
+}
 `
 
 export const Form = styled.div`
 display: flex;
 align-items: start;
-padding-top: 5rem;
+padding: 5rem;
 justify-content: center;
 background-color: #f1f1f1;
-height: 600px;
 width: 70vw;
 border-radius: 0 0 10px 10px ;
+gap: 1rem;
+@media (max-width: 1150px){
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100vw;
+}
+@media (max-width: 640px){
+  padding:3rem 1rem;
+}
 `
 
 export const ContentForm = styled.div`
@@ -36,17 +48,30 @@ display: flex;
 flex-direction: column;
 align-items: start;
 gap: 1.3rem;
+@media (max-width: 1150px){
+  align-items: center;
+}
 h4 {
   color: #060606;
   line-height: 2.5rem;
+  @media (max-width: 1150px){
+  text-align:center;
+}
 }
 p {
-  max-width: 400px;
+  width: 80%;
+  @media (max-width: 1150px){
+  text-align:center;
+}
 }
 div {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  
+  @media (max-width: 1150px){
+  gap: 1.5rem;
+}
 }
 img {
   background-color: #149af6;
@@ -54,7 +79,6 @@ img {
   border-radius: 50%;
 }
 `
-
 export const InputForm = styled.form`
 
 display: flex;
@@ -76,7 +100,10 @@ textarea {
   outline: none;
   color: #7B7D81;
   font-size: 1rem;
-  font-weight: 00;
+  font-weight: 500;
+  @media (max-width: 640px){
+    min-width: 280px ;
+}
 }
 input::placeholder, 
 textarea::placeholder {
@@ -84,7 +111,6 @@ textarea::placeholder {
   font-size: 1rem;
   font-weight: 00;
 }
-
 textarea {
   resize: none;
 }

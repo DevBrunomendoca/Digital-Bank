@@ -11,6 +11,10 @@ export const ContainerLoan = styled.section`
   overflow: hidden;
 
   padding: 0 15vw 10rem;
+  @media (max-width:1300px) {
+    
+    align-items: center;
+  }
 
   div {
     max-width: 1440px;

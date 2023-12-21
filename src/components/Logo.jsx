@@ -1,7 +1,9 @@
-
+import { LogoStyle } from "./LogoStyle" 
 const Logo = () => {
   return (
-    <img src="/logo.svg" alt="logo" />
+    <LogoStyle>
+      <p>Digi<span>bank.</span></p>
+    </LogoStyle>
   )
 }
 

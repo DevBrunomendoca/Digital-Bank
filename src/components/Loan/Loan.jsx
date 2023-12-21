@@ -3,6 +3,8 @@ import Separtor from "../Separator";
 import Subtitle from "../Subtitle";
 import TitleSecond from "../TitleSecond";
 
+import { useEffect, useState } from "react";
+
 
 import { ContainerLoan } from "./LoanStyle"
 import { ContainerCardLoan } from "./CardLaonStyle"
@@ -12,6 +14,26 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination, Navigation } from 'swiper/modules';
 
 export default function Loan() {
+  const [slidePerView, setSlidePerView] = useState(3)
+
+  useEffect(() => {
+
+function handleResize() {
+  window.innerWidth < 850 
+  ? setSlidePerView(1) 
+  : window.innerWidth < 1250 
+  ? setSlidePerView(2) 
+  : setSlidePerView(3)
+}
+  handleResize()
+
+  window.addEventListener("resize", handleResize)
+
+  return() => {
+    window.removeEventListener("resize", handleResize)
+  }
+
+  },[])
 
   const data = [
     { id: '1', icon: "/icon-documento.png", subtitle: "Empréstimo Parcelado", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sapiente numquam corporis in aspernatur." },
@@ -29,7 +51,7 @@ export default function Loan() {
 
       <div>
         <Swiper
-          slidesPerView={3}
+          slidesPerView={slidePerView}
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{

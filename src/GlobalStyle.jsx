@@ -8,7 +8,17 @@ export const GlobalStyle = createGlobalStyle`
   padding: 0;
   font-family: 'Inter', sans-serif;
 }
+html {
+  font-size: 100%;
+  
+}
 body {
   background-color: #060606;
+}
+@media (max-width:1250px) {
+  html {
+  font-size: 80%;
+  
+}
 }
 `

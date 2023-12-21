@@ -8,8 +8,6 @@ position: relative;
 bottom: 40vh;
 right: 3vw;
 z-index: 1;
-
-
 animation: floatRight ease-in-out 3s infinite;
 
 @keyframes floatRight {
@@ -21,4 +19,9 @@ animation: floatRight ease-in-out 3s infinite;
     transform: translateY(20px);
   }
 }
+@media (max-width:485px) {
+  bottom: 45vh;
+  right: 15vw;
+  width: 23%;
+  }
 `

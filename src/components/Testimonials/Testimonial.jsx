@@ -41,8 +41,10 @@ export default function Testimonials() {
           <SwiperSlide key={item.id}>
             <CommentCard>
               <div>
-                <img src={item.img} alt="avatar" />
-                <h4>{item.name}</h4>
+                <div>
+                  <img src={item.img} alt="avatar" />
+                  <h4>{item.name}</h4>
+                </div>
                 <TextParagraphStyle>{item.description}</TextParagraphStyle>
               </div>
               <p></p>
@@ -51,9 +53,9 @@ export default function Testimonials() {
         ))}
 
         </Swiper>
-        <Separtor/>  
+        <Separtor />
       </ContainerRight>
-      
+
     </ContainerTestimonials>
   )
 }
